@@ -12,6 +12,7 @@ const AWS = require("aws-sdk"),
  */
 exports.save = function(data) {
   data.id = data.team_id;
+  data.install_date = new Date().getTime();
   return this.query('put', { Item: data });
 }
 
