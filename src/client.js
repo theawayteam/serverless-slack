@@ -163,7 +163,7 @@ class Client {
     });
 
     // sends a 301 redirect
-    return 'https://slack.com/oauth/authorize?' + qs.stringify(args);
+    return 'https://slack.com/oauth/v2/authorize?' + qs.stringify(args);
   }
 
 
